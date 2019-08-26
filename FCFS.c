@@ -1,6 +1,6 @@
 
 // CPU-Scheduling-Algorithm-In-C
-// First Come First Served Scheduling Algorithm
+// First Come First Served Scheduling Algorithm(Non Pre-emptive)
 
 #include<stdio.h>
 #include<malloc.h>
