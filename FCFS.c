@@ -1,6 +1,6 @@
 
 // CPU-Scheduling-Algorithm-In-C
-// First Come First Served Scheduling Algorithm(Non Pre-emptive)
+// First Come First Served(FCFS) Scheduling Algorithm(Non Pre-emptive)
 
 #include<stdio.h>
 #include<malloc.h>
@@ -8,6 +8,7 @@
 void main() 
 {
     int i, n, *bt, *wt, *tat;
+    float avgtat, avgwt;
     printf("\n Enter the number of processes : ");
     scanf("%d", &n);
 
@@ -30,12 +31,22 @@ void main()
         tat[i] = wt[i] + bt[i];     //Turnaround Time = Waiting Time + Burst Time
     }
 
+    for(i=0; i<n; i++)
+    {
+        avgwt += wt[i];
+        avgtat += tat[i]; 
+    }
+    avgwt = avgwt/n;
+    avgtat = avgtat/n;
+
     printf("\n PROCESS \t BURST TIME \t WAITING TIME \t TURNAROUND TIME \n");
     printf("--------------------------------------------------------------\n");
     for(i=0; i<n; i++)
     {
         printf(" P%d \t\t %d \t\t %d \t\t %d \n", i, bt[i], wt[i], tat[i]);
     }
+
+    printf("\n Average Waiting Time = %f \n Average Turnaround Time = %f \n", avgwt, avgtat);
 
     printf("\n GAANT CHART \n");
     printf("---------------\n");
