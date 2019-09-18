@@ -6,3 +6,4 @@ The programs that have been completed so far are :
 1. First Come First Serve(FCFS)  Non Pre-emptive
 2. Shortest Job First(SJF)       Non Pre-emptive
 3. Priority Scheduling           Non Pre-emptive 
+4. Round Robin Scheduling        Pre-emptive
