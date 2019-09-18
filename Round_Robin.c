@@ -7,7 +7,7 @@
 
 void main()
 {
-    int n, i, j, tempn, count, terminaltime=0, initialtime, qt, flag=0, *bt, *wt, *tat, *tempbt;
+    int n, i, tempn, count, terminaltime=0, initialtime, qt, flag=0, *bt, *wt, *tat, *tempbt;
     float avgwt = 0, avgtat = 0;
     printf("\n Enter the number of processes : ");
     scanf("%d", &n);
@@ -42,7 +42,7 @@ void main()
             tat[count] = wt[count] + bt[count];
             flag = 1;
         }
-        else if(tempbt[count] > 0) {
+        else if(tempbt[count] > qt) {
             tempbt[count] -= qt;
             terminaltime += qt;
         }
