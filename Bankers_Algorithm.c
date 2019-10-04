@@ -24,20 +24,20 @@ void main()
   }
 
   printf("\n------------------------------------------------------------------------------\n");
-  printf("\n Enter MAXIMUM No. of instances, a Process need for each resource :\n");
+  printf("\n Enter MAXIMUM instance for a Process & its corresponding resource :\n");
   for(i=0; i<process; i++)
   {
     printf("\n For Process[%d] \n", i);
     for(j=0; j<resource; j++)
     {
-        printf(" Resource[%d] : ", i);
+        printf(" Resource[%d] : ", j);
         scanf("%d", &instance);
         max[i][j] = instance;
     }
   }
 
   printf("\n------------------------------------------------------------------------------\n");
-  printf("\n Enter No. of instances ALLOCATED for a Process & corresponding resource:\n");
+  printf("\n Enter instance ALLOCATED for a Process & its corresponding resource :\n");
   for(i=0; i<process; i++)
   {
     printf("\n For Process[%d] \n", i);
