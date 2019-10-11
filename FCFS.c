@@ -54,4 +54,8 @@ void main()
     {
         printf(" %d\t|| P%d ||\t%d\n", wt[i], i, tat[i]);
     }
+    
+    for(i=0; i<n; i++){
+        printf("%d",i);
+    }
 }
