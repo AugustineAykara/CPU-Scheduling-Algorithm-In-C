@@ -8,4 +8,4 @@ The programs that have been completed so far are :
 3. Priority Scheduling           Non Pre-emptive 
 4. Round Robin Scheduling        Pre-emptive
 5. Bankers Algorithm
-6. Simulation of Disk Scheduling Algorithm -> FCFS
+6. Simulation of Disk Scheduling Algorithm -> FCFS, SSTF, SCAN
