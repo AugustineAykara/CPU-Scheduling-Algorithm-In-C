@@ -1,5 +1,5 @@
 // CPU-Scheduling-Algorithm-In-C
-// Simulation of Disk Scheduling Algorithm -> FCFS
+// Simulation of Disk Scheduling Algorithm -> FCFS, SSTF, SCAN
 
 #include<stdio.h>
 #include <stdlib.h>
