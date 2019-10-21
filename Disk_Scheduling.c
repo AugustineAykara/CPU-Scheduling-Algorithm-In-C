@@ -109,12 +109,11 @@ void main()
 	scanf("%d", &n);
 	printf(" Enter total number of tracks : ");
 	scanf("%d", &t);
-	int process[n], sequence[n];
+	int sequence[n];
 	printf("\n Enter the disk request sequence for a disk with %d tracks : ", t);
 	for(i=0; i<n; i++)
 	{
-		scanf("%d", &process[i]);
-		sequence[i] = process[i];
+		scanf("%d", &sequence[i]);
 	}
 	printf(" Enter the initial position of the R/W head : ");
 	scanf("%d", &head);
