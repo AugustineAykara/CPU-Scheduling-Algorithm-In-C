@@ -21,12 +21,30 @@ void main()
 		switch(choice)
 		{
 			case 1: printf("\n Enter the name of file : ");
-					scanf("%s", dir.fileName[dir.fileCount]);
-					printf("\n File %s is CREATED\n", dir.fileName[dir.fileCount]);
-					dir.fileCount++;
+					scanf("%s", file);
+
+					for(i=0; i<dir.fileCount; i++)
+					{
+						if(strcmp(file, dir.fileName[i]) == 0)
+						{
+							printf("\n File %s NOT CREATED (file already EXIST)\n", file);
+							break;
+						}
+					}
+					if (i == dir.fileCount)
+					{
+						strcpy(dir.fileName[dir.fileCount], file);
+						printf("\n File %s is CREATED\n", dir.fileName[dir.fileCount]);
+						dir.fileCount++;
+					}
 					break;
 
-			case 2: printf("\n Enter the name of file : ");
+			case 2: if(dir.fileCount == 0)
+					{
+						printf("\n Directory is EMPTY (no files to DELETE)\n");
+						break;
+					}
+					printf("\n Enter the name of file : ");
 					scanf("%s", file);
 					for(i=0; i<dir.fileCount; i++)
 					{
