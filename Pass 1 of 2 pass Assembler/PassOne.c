@@ -8,7 +8,7 @@
 void main()
 {
 	char label[20], opcode[20], operand[20], code[20], length[20];
-	int locctr;
+	int locctr, start, size;
 	FILE *f1, *f2, *f3, *f4;
 
 	f1 = fopen("Input.dat", "r");
@@ -20,6 +20,7 @@ void main()
 	if(strcmp(opcode, "START") == 0)
 	{
 		locctr = atoi(operand);
+		start = locctr;
 		fprintf(f3, "\t\t%s\t%s\t%s\n", label, opcode, operand);
 		fscanf(f1, "%s\t%s\t%s", label, opcode, operand);
 	}
@@ -69,6 +70,9 @@ void main()
 		fscanf(f1, "%s\t%s\t%s", label, opcode, operand);
 	}
 	fprintf(f3, "%d\t%s\t%s\t%s\n", locctr, label, opcode, operand);
+	
+	size = locctr - start;
+	printf("\n\n Length of code = %d \n\n", size);
 
 	fclose(f1);
 	fclose(f2);
