@@ -10,3 +10,4 @@ The programs that have been completed so far are :
 5. Bankers Algorithm
 6. Simulation of Disk Scheduling Algorithm -> FCFS, SSTF, SCAN
 7. Single Level Directory File Organization
+8. Pass One of a Two Pass Assembler
