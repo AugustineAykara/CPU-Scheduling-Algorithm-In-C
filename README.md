@@ -11,3 +11,5 @@ The programs that have been completed so far are :
 6. Simulation of Disk Scheduling Algorithm -> FCFS, SSTF, SCAN
 7. Single Level Directory File Organization
 8. Pass One of a Two Pass Assembler
+9. Pass Two of a Two pass Assembler
+10. Absolute Loader
