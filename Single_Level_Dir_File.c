@@ -55,16 +55,13 @@ void main()
 						{
 							printf("\n File %s is DELETED\n", file);
 							strcpy(dir.fileName[i], dir.fileName[dir.fileCount-1]);
+							dir.fileCount--;
 							break;
 						}
 					}
 					if (i == dir.fileCount)
 					{
 						printf("\n File %s NOT FOUND\n", file);
-					}
-					else
-					{
-						dir.fileCount--;
 					}
 					break;
 
