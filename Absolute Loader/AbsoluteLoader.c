@@ -1,5 +1,9 @@
-# include <stdio.h>
-# include <string.h>
+// CPU-Scheduling-Algorithm-In-C
+// Absolute Loader
+
+# include<stdio.h>
+# include<string.h>
+
 void main()
 {
 	char input[10];
