@@ -24,7 +24,7 @@ void fcfs(int sequence[], int head, int n)
 void sstf(int sequence[], int head, int n)
 {
 	seektime = 0;
-	int arr[n], min, temp, i, j, x;
+	int arr[n], min, temp, i, j, pos;
 		
 	for(i=0; i<n; i++)
 	{
@@ -41,16 +41,16 @@ void sstf(int sequence[], int head, int n)
 				if(min > abs(head - sequence[i]))
 				{
 					min = abs(head - sequence[i]);
-					x = i;
+					pos = i;
 				}
 			}
 		}
 		if(min == 999)
 			break;
-		arr[x] = 1;
+		arr[pos] = 1;
 		seektime += min;
-		head = sequence[x];
-		printf(" > %d", sequence[x]);
+		head = sequence[pos];
+		printf(" > %d", sequence[pos]);
 	}
 	printf("\n\n Seek Time = %d", seektime);
 	
