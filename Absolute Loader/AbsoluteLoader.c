@@ -28,14 +28,14 @@ void main()
 			fprintf(fp2,"%d\t%c%c\n",address,input[0],input[1]);
 			fprintf(fp2,"%d\t%c%c\n",(address+1),input[2],input[3]);
 			fprintf(fp2,"%d\t%c%c\n",(address+2),input[4],input[5]);
-			address+=2;
+			address+=3;
 		}
 		else
 		{
 			fprintf(fp2,"%d\t%c%c\n",address,input[0],input[1]);
 			fprintf(fp2,"%d\t%c%c\n",(address+1),input[2],input[3]);
 			fprintf(fp2,"%d\t%c%c\n",(address+2),input[4],input[5]);
-			address+=2;
+			address+=3;
 		}
 		fscanf(fp1,"%s",input);
 	}
