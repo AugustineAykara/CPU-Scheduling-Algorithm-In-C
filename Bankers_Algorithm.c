@@ -36,7 +36,7 @@ void main()
     }
   }
 
-  printf("\n------------------------------------------------------------------------------\n");
+  printf("\n---------------------------------------------------------------------------\n");
   printf("\n Enter instance ALLOCATED for a Process & its corresponding resource :\n");
   for(i=0; i<process; i++)
   {
@@ -50,8 +50,8 @@ void main()
     }
   }
 
-  printf("\n------------------------------------------------------------------------------\n");
-  printf("\nSafe Sequence is : ");
+  printf("\n----------------------------------------------------------------------------\n");
+  printf("\nSafe Sequence is \n ");
   while(count != process)
   {
     count = temp;
